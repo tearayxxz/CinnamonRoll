@@ -1,0 +1,259 @@
+
+body{
+    background-color: rgb(99, 156, 158);
+}
+
+a:link{
+    color: #0b0ff0;
+}  */
+/* visited link */
+a:visited{
+	color: #ff0000; 
+} 
+/* mouse over link */  
+ a:hover{ 
+	color: #00ff22; 
+} 
+
+/* CCS width and height */
+h1, h2{
+    background-color:rgb(255, 196, 0);
+    color: rgb(0, 0, 0);
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 30pt;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+span{
+    background-color: white;
+}
+img{
+    width:50%;
+}
+
+/* Margin and padding */
+h2{
+    margin-left: 30px;
+    /* padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+#Cinnamon_pic {
+    width: 50%;
+    border: 5px double rgb(0, 0, 0);
+}
+
+#CinnamonLeft {
+	width: 20%;
+    border: 5px double rgb(0, 0, 0);
+}
+
+#CinnamonFooter_pic {
+    width: 50%;
+    border: 5px double rgb(0, 0, 0);
+}
+
+/* Block: center */
+.topic{
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    border: 5px double rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul{
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    /* margin: auto;
+    width: 200px; */
+}
+
+/* Float : comment ไว้จะดีกว่า */
+/* #pokemon_pic{
+    float: right;
+} */
+
+/* Position property */
+.parent{
+    text-align: left;
+}
+
+.div_display{
+    border: 2px solid turquoise;
+    width: 200px;
+    display: inline-block; 
+}
+
+#one{
+    position: static;
+    /* top: 20px;
+    left: 20px; */
+}
+
+/* Flexible box */
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex_container > div{
+    width: 300px;
+	margin-top: auto;
+    margin-left: 1px;
+    margin-bottom: auto;
+}
+
+/* สัปดาห์ที่ 2 */
+.left_page{
+    text-align: left;
+}
+
+div{
+    text-align: center;
+}
+
+div a{
+    color:rgb(25, 0, 255);
+}
+
+th{
+    text-decoration: underline;
+}
+
+hr{
+    height: 30px;
+    color: lightblue;
+    background-color: lightblue;
+    border: none;
+}
+
+.front_garamond{
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 10% auto 20%;
+	grid-gap: 10px;
+}
+
+.grid-container > div{
+	font-size: 30px;
+	text-align: center;
+}
+
+#header{
+	grid-column: 1 / span 3;
+}
+
+#main1{
+	grid-column:1 / span 2;
+}
+
+#main2{
+	grid-column: 1 / span 2;
+}
+
+#right{
+	border: 5px double rgb(0, 0, 0);
+	background-color:rgb(255, 196, 0);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	grid-column: 3 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 10% auto 20%;
+		grid-gap: 10px;
+	}
+	
+	.grid-container > div{
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	#header{
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+		grid-column:1 / span 2;
+	}
+	
+	#main2{
+		grid-column: 1 / span 2;
+	}
+	
+	#right{
+		border: 5px double rgb(0, 0, 0);
+		background-color:rgb(255, 196, 0);
+		margin-top: 30px;
+		margin-bottom: 30px;
+		grid-column: 3 / span 1;
+	}
+	
+	#footer{
+		grid-column: 1 / span 3;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 10% auto 20%;
+		grid-gap: 10px;
+	}
+	
+	.grid-container > div{
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	#header{
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+		grid-column:1 / span 3;
+	}
+	
+	#main2{
+		grid-column: 1 / span 3;
+	}
+	
+	#right{
+		border: 5px double rgb(0, 0, 0);
+		background-color:rgb(255, 196, 0);
+		margin-top: 30px;
+		margin-bottom: 30px;
+		grid-column: 1 / span 3;
+	}
+	
+	#footer{
+		grid-column: 1 / span 3;
+	}
+}
+
